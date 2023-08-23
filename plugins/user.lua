@@ -1,3 +1,4 @@
+
 return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
@@ -7,7 +8,7 @@ return {
   --   event = "BufRead",
   --   config = function()
   --     require("lsp_signature").setup()
-  --   end,
+  --   end, 
   -- },
   {
     "folke/todo-comments.nvim",
@@ -24,5 +25,21 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
     event = "User AstroFile",
+  },
+  {
+    "github/copilot.vim",
+    cmd = { "Copilot" },
+    event = "User AstroFile",
+  },
+  {
+    "mg979/vim-visual-multi",
+    event = "User AstroFile",
+  },
+  {
+    "catppuccin/nvim"
+  },
+  {
+    "nanotee/sqls.nvim",
+    event = "User AstroFile"
   }
 }
